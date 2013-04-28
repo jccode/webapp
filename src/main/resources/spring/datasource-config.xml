@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+         http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+	
+	<!-- Configurer that replaces ${...} placeholders with values from a properties file -->
+	<context:property-placeholder location="classpath:spring/jdbc.properties" />
+	
+	<!-- JNDI DataSource for JEE environments -->
+    <!--
+    <jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/petclinic"/>
+    -->
+    
+    <!-- DataSource for Standalone DB -->
+    <!-- 
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${jdbc.driver}"></property>
+		<property name="url" value="${jdbc.url}"></property>
+		<property name="username" value="${jdbc.username}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+	</bean>
+	-->
+	
+	<!-- DataSource for Embeded DB -->
+	<jdbc:embedded-database id="dataSource" type="HSQL">
+		<jdbc:script location="${jdbc.sql.schema}" />
+		<jdbc:script location="${jdbc.sql.data}" />
+	</jdbc:embedded-database>
+	
+	
+</beans>

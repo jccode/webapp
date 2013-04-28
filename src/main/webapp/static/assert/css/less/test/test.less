@@ -1,0 +1,44 @@
+/**
+ *  
+ */
+
+// Core variables and mixins
+@import "../variables.less";
+@import "../mixins.less";
+@import "../components.less";
+
+.container > div {
+	width: 100px;
+	height: 100px;
+	background-color: #ccc;
+	margin: 20px;
+	float: left;
+}
+.radius {
+	border: 2px solid #e3f;
+	.border-radius(25px);
+}
+.shadow {
+	.box-shadow(10px 10px 5px #000);
+}
+.transition {
+	.transition(width 2s);
+	&:hover {
+		width: 300px;
+	}
+}
+.rotate {
+	.rotate(30deg);
+}
+.translate {
+	.translate(100px, 50px);
+}
+.scale {
+	.scale(2, 1);
+}
+.skew {
+	.skew(30deg, 0deg);
+}
+div.iphone-checkbox {
+	width: 200px;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>订单管理-待处理页面</title>
+		<link rel="stylesheet" href="assert/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assert/css/bootstrap-responsive.min.css">
+		<link rel="stylesheet" href="assert/css/main.css">
+		<style type="text/css">
+			body {
+				/*padding: 50px 0px;*/
+				/*background-color: #f5f5f5;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="row-fluid container-fixed">
+			<div class="span12">
+				<div class="querybar">
+					<div class="row-fluid">
+						<div class="span4">
+							<form action="" class="form-search">
+								<div class="input-prepend">
+									<button type="submit" class="btn"><i class="icon-search"></i></button>
+									<input type="text" class="search-query search-query-width" placeholder="search" >
+								</div>
+							</form>
+						</div>
+						<div class="span4">
+							<button class="btn btn-link" data-toggle="button">超过20分钟</button>
+						</div>
+						<div class="span4">
+							<label for="auto_checkbox" class="checkbox toggle ios pull-right">
+								<span>自动出单</span>
+								<input id="auto_checkbox" type="checkbox">
+								<div class="toggle">
+									<i></i>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="common-list table-list">
+					<ul>
+						<li>
+							<div class="list-item table-item">
+								<div class="row-fluid head">
+									<div class="pull-left link left-panel">
+										<span class="">深圳市福田区莲花路2075号香丽大厦二楼</span>
+										<span class="forestgreen">15818501051</span>
+									</div>
+									<div class="pull-right">
+										<span class="brown">13.00元 (共8个)</span>
+										<a href="#" class="btn btn-mini order-btn-out"><i class="icon-print"></i>&nbsp;出单</a>
+									</div>
+								</div>
+								<div class="row-fluid body">
+									<div class="left-panel">
+										<span class="order-number">订单号: 10000101</span>
+										<span class="order-time">
+											预计送达时间: 11:00 (下单时间: 9:30)
+										</span>
+									</div>
+									<div class="food-collapse">
+										<p class="food-list">
+											<span>餐盘1:</span>
+											<span>白饭 x2</span>
+											<span>排骨 x1</span>
+											<span>意大利太空有机无毒小白菜 x1</span>
+											<span>餐盘2:</span>
+											<span>酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 x2</span>
+											<span>白饭 x2</span>
+											<span>排骨 x1</span>
+											<span>餐盘3:</span>
+											<span>意大利太空有机无毒小白菜 x1</span>
+											<span>酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 x2</span>
+										</p>
+									</div>
+									<div class="food-expand">
+										<ul class="plate-list">
+											<li>
+												<ul class="food-list">
+													<li><span>x2</span>白饭 </li>
+													<li><span>x1</span>排骨 </li>
+													<li><span>x11</span>意大利太空有机无毒小白菜小白菜小白菜 </li>
+													<li><span class="price">￥15.0</span></li>
+												</ul>
+											</li>
+
+											<li>
+												<ul class="food-list">
+													<li><span>x2</span> 酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 </li>
+													<li><span>x2</span> 白饭 </li>
+													<li><span>x1</span> 排骨 </li>
+													<li><span class="price">￥15.0</span></li>
+												</ul>
+											</li>
+											<li>
+												<ul class="food-list">
+													<li><span>x1</span> 意大利太空有机无毒小白菜 </li>
+													<li><span>x2</span> 酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 </li>
+													<li><span class="price">￥15.0</span></li>
+												</ul>
+											</li>
+											<li>
+												<ul class="food-list">
+													<li><span>x1</span> 意大利太空有机无毒小白菜 </li>
+													<li><span>x2</span> 酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 </li>
+													<li><span class="price">￥15.0</span></li>
+												</ul>
+											</li>
+											<li>
+												<ul class="food-list">
+													<li><span>x1</span> 意大利太空有机无毒小白菜 </li>
+													<li><span>x2</span> 酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 </li>
+													<li><span class="price">￥15.0</span></li>
+												</ul>
+											</li>
+											<li>
+												<ul class="food-list">
+													<li><span>x1</span> 意大利太空有机无毒小白菜 </li>
+													<li><span>x2</span> 酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 </li>
+													<li><span class="price">￥15.0</span></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="list-item table-item">
+								<div class="row-fluid head">
+									<div class="pull-left link left-panel">
+										<span class="">深圳市福田区莲花路2075号香丽大厦二楼</span>
+										<span class="forestgreen">15818501051</span>
+									</div>
+									<div class="pull-right">
+										<span class="brown">13.00元 (共4个)</span>
+										<a href="#" class="btn btn-mini order-btn-out"><i class="icon-print"></i>&nbsp;出单</a>
+									</div>
+								</div>
+								<div class="row-fluid body">
+									<div class="left-panel">
+										<span class="order-number">订单号: 10000101</span>
+										<span class="order-time">
+											预计送达时间: 11:00 (下单时间: 9:30)
+										</span>
+									</div>
+									<div class="food-collapse">
+										<p class="food-list">
+											<span>餐盘1:</span>
+											<span>白饭 x2</span>
+											<span>排骨 x1</span>
+											<span>意大利太空有机无毒小白菜 x1</span>
+											<span>酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 x2</span>
+										</p>
+									</div>
+									<div class="food-expand">
+										<ul class="plate-list">
+											<li>
+												<ul class="food-list">
+													<li><span>x1</span> 意大利太空有机无毒小白菜 </li>
+													<li><span>x2</span> 酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 </li>
+													<li><span class="price">￥15.0</span></li>
+												</ul>
+											</li>
+											<li>
+												<ul class="food-list">
+													<li><span>x1</span> 意大利太空有机无毒小白菜 </li>
+													<li><span>x2</span> 酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 </li>
+													<li><span class="price">￥15.0</span></li>
+												</ul>
+											</li>
+											<li>
+												<ul class="food-list">
+													<li><span>x1</span> 意大利太空有机无毒小白菜 </li>
+													<li><span>x2</span> 酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 </li>
+													<li><span class="price">￥15.0</span></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="list-item table-item">
+								<div class="row-fluid head">
+									<div class="pull-left link left-panel">
+										<span class="">深圳市福田区莲花路2075号香丽大厦二楼</span>
+										<span class="forestgreen">15818501051</span>
+									</div>
+									<div class="pull-right">
+										<span class="brown">13.00元 (共4个)</span>
+										<a href="#" class="btn btn-mini order-btn-out"><i class="icon-print"></i>&nbsp;出单</a>
+									</div>
+								</div>
+								<div class="row body">
+									<div class="left-panel">
+										<span class="order-number">订单号: 10000101</span>
+										<span class="order-time">
+											预计送达时间: 11:00 (下单时间: 9:30)
+										</span>
+									</div>
+									<div class="food-collapse">
+										<p class="food-list">
+											<span>餐盘1:</span>
+											<span>白饭 x2</span>
+											<span>排骨 x1</span>
+											<span>意大利太空有机无毒小白菜 x1</span>
+											<span>酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 x2</span>
+										</p>
+									</div>
+									<div class="food-expand">
+										<ul class="plate-list">
+											<li>
+												<ul class="food-list">
+													<li><span>x2</span>白饭 </li>
+													<li><span>x1</span>排骨 </li>
+													<li><span>x11</span>意大利太空有机无毒小白菜小白菜小白菜 </li>
+													<li><span class="price">￥15.0</span></li>
+												</ul>
+											</li>
+
+											<li>
+												<ul class="food-list">
+													<li><span>x2</span> 酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 </li>
+													<li><span>x2</span> 白饭 </li>
+													<li><span>x1</span> 排骨 </li>
+													<li><span class="price">￥15.0</span></li>
+												</ul>
+											</li>
+											<li>
+												<ul class="food-list">
+													<li><span>x1</span> 意大利太空有机无毒小白菜 </li>
+													<li><span>x2</span> 酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 </li>
+													<li><span class="price">￥15.0</span></li>
+												</ul>
+											</li>
+											<li>
+												<ul class="food-list">
+													<li><span>x1</span> 意大利太空有机无毒小白菜 </li>
+													<li><span>x2</span> 酸酸甜甜的苦瓜炒傻不拉饥的荷包蛋 </li>
+													<li><span class="price">￥15.0</span></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+							</div>
+						</li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			
+				<!-- pagination -->
+				<div id="page"></div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="assert/js/jquery-1.8.0.js"></script>
+		<script type="text/javascript" src="assert/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assert/js/jquery.pagination.js"></script>
+		<script type="text/javascript" src="assert/js/order-tablelist.js"></script>
+		<script type="text/javascript">
+
+			jQuery(function ($) {
+
+				$("#page").pagination({
+					className: "pagination-right", 
+					page: 1, 
+					count: 10, 
+					callback: function (current_page, new_page) {
+					}, 
+					refresh: false
+				});
+
+			});
+
+		</script>
+	</body>
+</html>
